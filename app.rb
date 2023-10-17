@@ -1,22 +1,20 @@
 require "sinatra"
 require "sinatra/reloader"
 
-#Homepage
-get("/") do
+get("/") do #Homepage
   erb(:welcome)
 end
 
-
 get("/rock") do #Play Rock
-  @user_play = ["rock", "paper", "scissors"].sample
   @computer_play = ["rock", "paper", "scissors"].sample
 
   erb(:rock)
-
 end
 
-#Play Paper
-get("/paper") do
+get("/paper") do #Play Paper
+  @computer_play = ["rock", "paper", "scissors"].sample
+  
+  erb(:paper)
 end
 
 #Play Scissors
