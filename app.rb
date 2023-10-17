@@ -8,11 +8,11 @@ end
 
 
 get("/rock") do #Play Rock
-  @user_play = ["rock", "paper", "scissor"].sample
-  @compuater_play = ["rock", "paper", "scissor"].sample
+  @user_play = ["rock", "paper", "scissors"].sample
+  @computer_play = ["rock", "paper", "scissors"].sample
 
   erb(:rock)
-  
+
 end
 
 #Play Paper
