@@ -17,6 +17,8 @@ get("/paper") do #Play Paper
   erb(:paper)
 end
 
-#Play Scissors
-get("/scissors") do
+get("/scissors") do #Play Scissors
+  @computer_play = ["rock", "paper", "scissors"].sample
+  
+  erb(:scissors)
 end

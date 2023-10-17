@@ -1,0 +1,31 @@
+<!-- /views/scissors.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scissors</title>
+</head>
+
+<body>
+
+  <!-- Print what we played -->
+  <h2>We played scissors!</h2>
+
+  <!-- Print what computer played -->
+  <h2>They played <%= @computer_play %>!</h2>
+
+  <!-- Print result -->
+  <% if @computer_play == "scissors" %>
+  <h2>We tied!</h2>
+  <% else %>
+    <% if @computer_play == "rock" %>
+    <h2>They won!</h2>
+    <% else %>
+    <h2>We won!</h2>
+    <% end %>
+  <% end %>
+
+  <a href="/">Rules</a>
+
+</body>
+</html>
