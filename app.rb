@@ -6,8 +6,12 @@ get("/") do
   erb(:welcome)
 end
 
-#Play Rock
-get("/rock") do
+
+get("/rock") do #Play Rock
+  @user_play = ["rock", "paper", "scissor"].sample
+  @compuater_play = ["rock", "paper", "scissor"].sample
+
+  erb(:rock)
 end
 
 #Play Paper
