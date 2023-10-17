@@ -12,6 +12,7 @@ get("/rock") do #Play Rock
   @compuater_play = ["rock", "paper", "scissor"].sample
 
   erb(:rock)
+  
 end
 
 #Play Paper
